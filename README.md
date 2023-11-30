@@ -17,7 +17,6 @@ Este projeto é distribuído sob a licença MIT - veja o arquivo [LICENSE](LICEN
 1. Clone este repositório (`git clone https://github.com/seu-usuario/laravel-drink-recipes.git`)
 2. Instale as dependências usando o Composer (`composer install`)
 3. Copie o arquivo de ambiente (`cp .env.example .env`) e configure as variáveis de ambiente, incluindo as configurações do banco de dados.
-3. Configure as variáveis de ambiente, incluindo as configurações do banco de dados.
 4. Gere a chave de aplicativo (`php artisan key:generate`)
 5. Execute as migrações do banco de dados (`php artisan migrate`) antes de rodar este comando verifique sua conexão com o bd no arquivo.
 6. Inicie o servidor de desenvolvimento Vite ('npm run dev')
