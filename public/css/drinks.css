@@ -1,0 +1,20 @@
+section#drinks .card {
+    background-color: transparent;
+    border: 1px solid var(--blue);
+    border-radius: 15px;
+}
+
+section#drinks a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 25px;
+}
+
+section#drinks img {
+    border-radius: 15px 15px 0 0;
+}
+
+section#drinks .card h3 {
+    text-align: center;
+    font-weight: bold;
+}

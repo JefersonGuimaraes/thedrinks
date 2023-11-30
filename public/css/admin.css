@@ -1,0 +1,39 @@
+table {
+    width: 100%;
+    font-size: 15px;
+}
+
+td {
+    align-items: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+small{
+    font-size: 11pt;
+    color: var(--dark-blue)
+}
+
+.fa-trash {
+    color: #800000;
+    cursor: pointer;
+}
+
+.fa-pen-to-square {
+    color: var(--blue);
+    cursor: pointer;
+}
+
+.btn-action {
+    background: none;
+    border: none;
+    font-size: 15pt;
+}
+
+#categoryAlert{
+    background-color: #ff0404c2;
+    color: #fff;
+    font-size: 12pt;
+    padding: 0.5rem;
+    border-radius: 5px;
+}

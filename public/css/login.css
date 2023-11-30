@@ -1,0 +1,38 @@
+div#content {
+    border: 1px solid #FFF;
+    padding: 2rem 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input-group-text {
+    background-color: var(--background);
+}
+
+i.fa-solid {
+    color: #FFF !important;
+}
+
+span#button-revel {
+    cursor: pointer;
+    padding-top: .6rem;
+    padding-bottom: .6rem;
+    border-top: solid 2px #FFF;
+    border-right: solid 2px #FFF;
+    border-bottom: solid 2px #FFF;
+    border-left: none;
+    background-color: transparent;
+}
+
+#group-actions label,
+a {
+    font-size: 12pt;
+}
+
+
+/*  RESPONSIVE  */
+@media screen and (min-width: 768px) {
+    div#content {
+        max-width: 30rem;
+    }
+}
