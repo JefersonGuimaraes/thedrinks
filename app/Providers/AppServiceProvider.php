@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Pagination\Paginator;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -24,5 +25,7 @@ class AppServiceProvider extends ServiceProvider
             $imageSize = getimagesize($value->getPathname());
             return $imageSize[0] === $imageSize[1];
         });
+
+        Paginator::useBootstrap();
     }
 }

@@ -1,8 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WCQ7TZZ5');</script>
+  <!-- End Google Tag Manager -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-adsense-account" content="ca-pub-2244812374540628">
   <title>@yield('title')</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -11,6 +19,7 @@
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script async src="https://fundingchoicesmessages.google.com/i/pub-2244812374540628?ers=1" nonce="iZnso9V7uKWRNmJS2Wpc6w"></script><script nonce="iZnso9V7uKWRNmJS2Wpc6w">(function() {function signalGooglefcPresent() {if (!window.frames['googlefcPresent']) {if (document.body) {const iframe = document.createElement('iframe'); iframe.style = 'width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px;'; iframe.style.display = 'none'; iframe.name = 'googlefcPresent'; document.body.appendChild(iframe);} else {setTimeout(signalGooglefcPresent, 0);}}}signalGooglefcPresent();})();</script>
 </head>
 <body>
   
@@ -21,7 +30,7 @@
             <i class="fa-solid fa-bars" id="iconButton"></i>
         </button>
         <a href="/">
-            <img src="/images/logo-big-icon-transparent-500.png" alt="The Drinks" />
+            <img src="/images/logo-big-icon-transparent-150.png" alt="The Drinks" />
         </a>
         <form>
           <button class="navbar-toggler" id="button-search" type="button" data-bs-toggle="collapse" data-bs-target="#containerSearch" aria-controls="containerSearch" aria-expanded="false">
@@ -51,7 +60,7 @@
           </ul>
           <form method="GET" action="/" class="d-none d-xl-flex me-3" role="search">
             <div class="input-group">
-              <input class="form-control border-end-0 border rounded-pill" type="search" placeholder="Busque por drinks" id="search" name="search">
+              <input class="form-control border-end-0 border rounded-pill" type="search" placeholder="Drinks ou ingredientes" id="search" name="search">
               <span class="input-group-append">
                   <button class="btn btn-outline-secondary bg-white border-bottom-0 border rounded-pill ms-n5" type="button" style="margin-left: -40px; margin-top: 1.7px">
                       <i class="fa fa-search"></i>
@@ -104,7 +113,7 @@
     <div class="container collapse" id="containerSearch">
       <form action="/" method="GET">
         <div class="input-group mt-3">
-          <input class="form-control border-end-0 border rounded-pill" type="search" placeholder="Busque por drinks" id="input-search" name="search">
+          <input class="form-control border-end-0 border rounded-pill" type="search" placeholder="Drinks ou ingredientes" id="input-search" name="search">
           <span class="input-group-append">
               <button class="btn btn-outline-secondary bg-white border-bottom-0 border rounded-pill ms-n5" type="button" style="margin-left: -40px;">
                   <i class="fa fa-search"></i>
@@ -117,18 +126,14 @@
   
   <div class="container-fluid">
     <div class="row">
-      <aside class="col-lg-2 d-none d-lg-block">
-      </aside>
         @include('../inc/alerts')
-      <main class="col-12 col-lg-8">
-        <div class="container-fluid">
+      <main>
+        <div class="container-fluid container-md">
 
         @yield('content')
 
         </div>
       </main>
-      <aside class="col-lg-2 d-none d-lg-block">
-      </aside>
     </div>
   </div>
   
@@ -160,7 +165,7 @@
         </div>
         <div class="col-md-6 d-flex">
           <a href="#" class="mx-auto my-auto">
-            <img src="/images/logo-big-icon-transparent.png" class="img-fluid" width="200" height="200" alt="Receitas de drinks">
+            <img src="/images/logo-big-icon-transparent-300.png" class="img-fluid" width="200" height="200" alt="Receitas de drinks">
           </a>
         </div>
         <p class="text-center">Desenvolvido por <a href="https://www.codxtech.com.br" target="_blank">CODX Tech</a> &copy 2023</p>

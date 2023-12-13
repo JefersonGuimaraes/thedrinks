@@ -331,7 +331,7 @@ div.divisor {
 }
 
 body::-webkit-scrollbar {
-  width: .25rem;
+  width: .4rem;
 }
 
 body::-webkit-scrollbar-track {

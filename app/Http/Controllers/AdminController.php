@@ -18,15 +18,18 @@ class AdminController extends Controller{
 
     $user = $this->getUser();
 
-    $drinks = Drink::with('categories')->get();
+    $registeredDrinks = Drink::count();
+
+    $drinks = Drink::with('categories')->orderBy('name')->paginate(10);
     
     $categories = CategoryController::getCategories();
 
     return view('admin/index', [
-                                'css'         => $css,
-                                'user'        => $user,
-                                'drinks'      => $drinks,
-                                'categories'  => $categories                                
+                                'css'               => $css,
+                                'user'              => $user,
+                                'drinks'            => $drinks,
+                                'registeredDrinks'  => $registeredDrinks,
+                                'categories'        => $categories                                
                                ]);
   }
 

@@ -11,7 +11,7 @@
       <button class="btn btn-cdx ms-auto me-0" data-bs-toggle="modal" data-bs-target="#newDrinkModal"><span>Novo</span></button>
     </div>
     <div class="table-responsive mt-4">
-      <small class="float-end" style="color: #DCDC">Drinks cadastrados: {{count($drinks)}}</small>
+      <small class="float-end" style="color: #DCDC">Drinks cadastrados: {{ $registeredDrinks }}</small>
       <table class="table table-light table-striped align-middle">
         <thead class="table-dark">
           <tr>
@@ -46,6 +46,7 @@
           @endforeach
         </tbody>
       </table>
+      {{ $drinks->links() }}
 
     </div>
 
@@ -191,15 +192,15 @@
           </div>
 
           <div class="mb-3 row">
-            <div class="col-lg-6 mt-3 mt-lg-0">
+            <div class="col mt-3 mt-lg-0">
               <label class="form-label">Ingredientes:</label>
-              <textarea name="ingredients" id="ingredientsUpdate" class="form-control" rows="5">⚬ </textarea>
+              <textarea name="ingredients" id="ingredientsUpdate" class="form-control" rows="5"></textarea>
             </div>
           </div>
 
           <div class="mb-3 mt-5">
             <label for="preparation" class="form-label">Modo de Preparo:</label>
-            <textarea name="preparation" id="preparationUpdate" rows="7" class="form-control">⚬ </textarea>
+            <textarea name="preparation" id="preparationUpdate" rows="7" class="form-control"></textarea>
           </div>
 
           <div class="mt-5 mb-3">

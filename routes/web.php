@@ -36,3 +36,9 @@ Route::get('/register', function(){
 });
 
 
+/**
+ * ROTAS PARA LGPD
+ */
+Route::get('/lgpd', function(){
+  return view('lgpd');
+});

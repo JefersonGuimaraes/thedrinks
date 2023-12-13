@@ -21,7 +21,7 @@ class DrinkController extends Controller
    */
   public function index()
   {
-    $mostWanted = $this->getmostWanted(3);
+    $mostWanted = $this->getmostWanted(4);
 
     $alcoholics = $this->getAlcoholics(6);
     
@@ -35,14 +35,14 @@ class DrinkController extends Controller
 
     $search = request('search');
 
-
     $user = auth() ? auth()->user() : null;
 
     if($search){
 
-      $results = Drink::where([
-        ["name", "like", "%$search%"]
-      ])->get();
+      $results = Drink::where(function ($query) use ($search){
+        $query->where("name", "like", "%$search%")
+              ->orwhere("ingredients", "like", "%$search%");
+      })->get();
 
     }else{
 
